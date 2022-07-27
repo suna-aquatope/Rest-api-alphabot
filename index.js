@@ -3,7 +3,7 @@ var express = require('express'),
     secure = require('ssl-express-www');
 const api1keyy = process.env.KEY1;
 const api2keyy = process.env.KEY2;
-const listkey = [api1keyy,api2keyy];
+const listkey = (api1keyy),(api2keyy);
 const PORT = process.env.PORT || 8080 || 5000 || 3000
 var { color } = require('./lib/color.js')
 
@@ -22,7 +22,7 @@ app.use('/api', apirouter)
 
 app.listen(PORT, () => {
     console.log(color("Server running on port " + PORT,'green'))
-    console.log("List Apinya" + listkey);
+    console.log("List Apinya " + listkey);
 })
 
 module.exports = app
