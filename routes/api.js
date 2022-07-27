@@ -287,7 +287,7 @@ router.get('/china', async (req, res, next) => {
 router.get('/cewe/vietnam', async (req, res, next) => {
         var apikeyInput = req.query.apikey
 	if(!apikeyInput) return res.json(loghandler.notparam)	
-	if (apikeyInput != 'Alphabot')  return res.json(loghandler.invalidKey)
+	if (apikeyInput != process.env.KY2_API)  return res.json(loghandler.invalidKey)
        fetch(encodeURI(`https://raw.githubusercontent.com/zeeoneofc/Asupan/main/cecan/vietnam.json`))
         .then(response => response.json())
         .then(data => {
@@ -305,7 +305,7 @@ router.get('/cewe/vietnam', async (req, res, next) => {
 router.get('/cewe/thailand', async (req, res, next) => {
         var apikeyInput = req.query.apikey
 	if(!apikeyInput) return res.json(loghandler.notparam)	
-	if (apikeyInput != 'Alphabot')  return res.json(loghandler.invalidKey)
+	if (apikeyInput != process.env.KY2_API)  return res.json(loghandler.invalidKey)
        fetch(encodeURI(`https://raw.githubusercontent.com/zeeoneofc/Asupan/main/cecan/thailand.json`))
         .then(response => response.json())
         .then(data => {
@@ -323,7 +323,7 @@ router.get('/cewe/thailand', async (req, res, next) => {
 router.get('/cewe/china', async (req, res, next) => {
         var apikeyInput = req.query.apikey
 	if(!apikeyInput) return res.json(loghandler.notparam)	
-	if (apikeyInput != 'Alphabot')  return res.json(loghandler.invalidKey)
+	if (apikeyInput != process.env.KY2_API)  return res.json(loghandler.invalidKey)
        fetch(encodeURI(`https://raw.githubusercontent.com/zeeoneofc/Asupan/main/cecan/china.json`))
         .then(response => response.json())
         .then(data => {
@@ -341,7 +341,7 @@ router.get('/cewe/china', async (req, res, next) => {
 router.get('/cewe/indonesia', async (req, res, next) => {
         var apikeyInput = req.query.apikey
 	if(!apikeyInput) return res.json(loghandler.notparam)	
-	if (apikeyInput != 'Alphabot')  return res.json(loghandler.invalidKey)
+	if (apikeyInput != process.env.KY2_API)  return res.json(loghandler.invalidKey)
        fetch(encodeURI(`https://raw.githubusercontent.com/zeeoneofc/Asupan/main/cecan/indonesia.json`))
         .then(response => response.json())
         .then(data => {
@@ -359,7 +359,7 @@ router.get('/cewe/indonesia', async (req, res, next) => {
 router.get('/cewe/korea', async (req, res, next) => {
         var apikeyInput = req.query.apikey
 	if(!apikeyInput) return res.json(loghandler.notparam)	
-	if (apikeyInput != 'Alphabot')  return res.json(loghandler.invalidKey)
+	if (apikeyInput != process.env.KY2_API)  return res.json(loghandler.invalidKey)
        fetch(encodeURI(`https://raw.githubusercontent.com/zeeoneofc/Asupan/main/cecan/korea.json`))
         .then(response => response.json())
         .then(data => {
@@ -377,7 +377,7 @@ router.get('/cewe/korea', async (req, res, next) => {
 router.get('/cewe/japan', async (req, res, next) => {
         var apikeyInput = req.query.apikey
 	if(!apikeyInput) return res.json(loghandler.notparam)	
-	if (apikeyInput != 'Alphabot')  return res.json(loghandler.invalidKey)
+	if (apikeyInput != process.env.KY2_API)  return res.json(loghandler.invalidKey)
        fetch(encodeURI(`https://raw.githubusercontent.com/zeeoneofc/Asupan/main/cecan/japan.json`))
         .then(response => response.json())
         .then(data => {
@@ -395,7 +395,7 @@ router.get('/cewe/japan', async (req, res, next) => {
 router.get('/cewe/malaysia', async (req, res, next) => {
         var apikeyInput = req.query.apikey
 	if(!apikeyInput) return res.json(loghandler.notparam)	
-	if (apikeyInput != 'Alphabot')  return res.json(loghandler.invalidKey)
+	if (apikeyInput != process.env.KY2_API)  return res.json(loghandler.invalidKey)
        fetch(encodeURI(`https://raw.githubusercontent.com/zeeoneofc/Asupan/main/cecan/malaysia.json`))
         .then(response => response.json())
         .then(data => {
@@ -414,7 +414,7 @@ router.get('/cewe/malaysia', async (req, res, next) => {
 router.get('/asupan/cecan', async (req, res, next) => {
         var apikeyInput = req.query.apikey
 	if(!apikeyInput) return res.json(loghandler.notparam)	
-	if (apikeyInput != 'Alphabot')  return res.json(loghandler.invalidKey)
+	if (apikeyInput != process.env.KY2_API)  return res.json(loghandler.invalidKey)
        fetch(encodeURI(`https://raw.githubusercontent.com/binjaicity/warga62/master/cecan.json`))
         .then(response => response.json())
         .then(data => {
@@ -433,7 +433,7 @@ router.get('/asupan/cecan', async (req, res, next) => {
 router.get('/asupan/hijaber', async (req, res, next) => {
         var apikeyInput = req.query.apikey
 	if(!apikeyInput) return res.json(loghandler.notparam)
-	if (apikeyInput != 'Alphabot')  return res.json(loghandler.invalidKey)
+	if (apikeyInput != process.env.KY2_API)  return res.json(loghandler.invalidKey)
        fetch(encodeURI(`https://raw.githubusercontent.com/binjaicity/warga62/master/hijaber.json`))
         .then(response => response.json())
         .then(data => {
@@ -452,7 +452,7 @@ router.get('/asupan', async (req, res, next) => {
         var apikeyInput = req.query.apikey
             
 	if(!apikeyInput) return res.json(loghandler.notparam)
-	if (apikeyInput != 'Alphabot')  return res.json(loghandler.invalidKey)
+	if (apikeyInput != process.env.KY2_API)  return res.json(loghandler.invalidKey)
 
        fetch(encodeURI(`https://raw.githubusercontent.com/binjaicity/warga62/master/asupan.js`))
         .then(response => response.json())
@@ -473,7 +473,7 @@ router.get('/asupan/rikagusriani', async (req, res, next) => {
         var apikeyInput = req.query.apikey
             
 	if(!apikeyInput) return res.json(loghandler.notparam)
-	if (apikeyInput != 'Alphabot')  return res.json(loghandler.invalidKey)
+	if (apikeyInput != process.env.KY2_API)  return res.json(loghandler.invalidKey)
 
        fetch(encodeURI(`https://raw.githubusercontent.com/binjaicity/warga62/master/asupan/rikagusriani.json`))
         .then(response => response.json())
@@ -494,7 +494,7 @@ router.get('/asupan/santuy', async (req, res, next) => {
         var apikeyInput = req.query.apikey
             
 	if(!apikeyInput) return res.json(loghandler.notparam)
-	if (apikeyInput != 'Alphabot')  return res.json(loghandler.invalidKey)
+	if (apikeyInput != process.env.KY2_API)  return res.json(loghandler.invalidKey)
 
        fetch(encodeURI(`https://raw.githubusercontent.com/binjaicity/warga62/master/santuy.json`))
         .then(response => response.json())
@@ -515,7 +515,7 @@ router.get('/asupan/ukty', async (req, res, next) => {
         var apikeyInput = req.query.apikey
             
 	if(!apikeyInput) return res.json(loghandler.notparam)
-	if (apikeyInput != 'Alphabot')  return res.json(loghandler.invalidKey)
+	if (apikeyInput != process.env.KY2_API)  return res.json(loghandler.invalidKey)
 
        fetch(encodeURI(`https://raw.githubusercontent.com/binjaicity/warga62/master/ukhty.json`))
         .then(response => response.json())
@@ -536,7 +536,7 @@ router.get('/asupan/bocil', async (req, res, next) => {
         var apikeyInput = req.query.apikey
             
 	if(!apikeyInput) return res.json(loghandler.notparam)
-	if (apikeyInput != 'Alphabot')  return res.json(loghandler.invalidKey)
+	if (apikeyInput != process.env.KY2_API)  return res.json(loghandler.invalidKey)
 
        fetch(encodeURI(`https://raw.githubusercontent.com/binjaicity/warga62/master/bocil.json`))
         .then(response => response.json())
@@ -580,7 +580,7 @@ router.get('/nsfw/ass', async (req, res, next) => {
         var apikeyInput = req.query.apikey
             
 	if(!apikeyInput) return res.json(loghandler.notparam)
-	if (apikeyInput != 'Alphabot')  return res.json(loghandler.invalidKey)
+	if (apikeyInput != process.env.KY2_API)  return res.json(loghandler.invalidKey)
 
        fetch(encodeURI(`https://raw.githubusercontent.com/jepribarus/JB-Api/main/nsfw/ass.json`))
         .then(response => response.json())
@@ -601,7 +601,7 @@ router.get('/nsfw/ahegao', async (req, res, next) => {
         var apikeyInput = req.query.apikey
             
 	if(!apikeyInput) return res.json(loghandler.notparam)
-	if (apikeyInput != 'Alphabot')  return res.json(loghandler.invalidKey)
+	if (apikeyInput != process.env.KY2_API)  return res.json(loghandler.invalidKey)
 
        fetch(encodeURI(`https://raw.githubusercontent.com/jepribarus/JB-Api/main/nsfw/ahegao.json`))
         .then(response => response.json())
@@ -622,7 +622,7 @@ router.get('/nsfw/bdsm', async (req, res, next) => {
         var apikeyInput = req.query.apikey
             
 	if(!apikeyInput) return res.json(loghandler.notparam)
-	if (apikeyInput != 'Alphabot')  return res.json(loghandler.invalidKey)
+	if (apikeyInput != process.env.KY2_API)  return res.json(loghandler.invalidKey)
 
        fetch(encodeURI(`https://raw.githubusercontent.com/jepribarus/JB-Api/main/nsfw/bdsm.json`))
         .then(response => response.json())
@@ -643,7 +643,7 @@ router.get('/nsfw/blowjob', async (req, res, next) => {
         var apikeyInput = req.query.apikey
             
 	if(!apikeyInput) return res.json(loghandler.notparam)
-	if (apikeyInput != 'Alphabot')  return res.json(loghandler.invalidKey)
+	if (apikeyInput != process.env.KY2_API)  return res.json(loghandler.invalidKey)
 
        fetch(encodeURI(`https://raw.githubusercontent.com/jepribarus/JB-Api/main/nsfw/blowjob.json`))
         .then(response => response.json())
@@ -664,7 +664,7 @@ router.get('/nsfw/cuckold', async (req, res, next) => {
         var apikeyInput = req.query.apikey
             
 	if(!apikeyInput) return res.json(loghandler.notparam)
-	if (apikeyInput != 'Alphabot')  return res.json(loghandler.invalidKey)
+	if (apikeyInput != process.env.KY2_API)  return res.json(loghandler.invalidKey)
 
        fetch(encodeURI(`https://raw.githubusercontent.com/jepribarus/JB-Api/main/nsfw/cuckold.json`))
         .then(response => response.json())
@@ -685,7 +685,7 @@ router.get('/nsfw/cum', async (req, res, next) => {
         var apikeyInput = req.query.apikey
             
 	if(!apikeyInput) return res.json(loghandler.notparam)
-	if (apikeyInput != 'Alphabot')  return res.json(loghandler.invalidKey)
+	if (apikeyInput != process.env.KY2_API)  return res.json(loghandler.invalidKey)
 
        fetch(encodeURI(`https://raw.githubusercontent.com/jepribarus/JB-Api/main/nsfw/cum.json`))
         .then(response => response.json())
@@ -706,7 +706,7 @@ router.get('/nsfw/ero', async (req, res, next) => {
         var apikeyInput = req.query.apikey
             
 	if(!apikeyInput) return res.json(loghandler.notparam)
-	if (apikeyInput != 'Alphabot')  return res.json(loghandler.invalidKey)
+	if (apikeyInput != process.env.KY2_API)  return res.json(loghandler.invalidKey)
 
        fetch(encodeURI(`https://raw.githubusercontent.com/jepribarus/JB-Api/main/nsfw/ero.json`))
         .then(response => response.json())
@@ -727,7 +727,7 @@ router.get('/nsfw/femdom', async (req, res, next) => {
         var apikeyInput = req.query.apikey
             
 	if(!apikeyInput) return res.json(loghandler.notparam)
-	if (apikeyInput != 'Alphabot')  return res.json(loghandler.invalidKey)
+	if (apikeyInput != process.env.KY2_API)  return res.json(loghandler.invalidKey)
 
        fetch(encodeURI(`https://raw.githubusercontent.com/jepribarus/JB-Api/main/nsfw/femdom.json`))
         .then(response => response.json())
@@ -748,7 +748,7 @@ router.get('/nsfw/foot', async (req, res, next) => {
         var apikeyInput = req.query.apikey
             
 	if(!apikeyInput) return res.json(loghandler.notparam)
-	if (apikeyInput != 'Alphabot')  return res.json(loghandler.invalidKey)
+	if (apikeyInput != process.env.KY2_API)  return res.json(loghandler.invalidKey)
 
        fetch(encodeURI(`https://raw.githubusercontent.com/jepribarus/JB-Api/main/nsfw/foot.json`))
         .then(response => response.json())
@@ -769,7 +769,7 @@ router.get('/nsfw/gangbang', async (req, res, next) => {
         var apikeyInput = req.query.apikey
             
 	if(!apikeyInput) return res.json(loghandler.notparam)
-	if (apikeyInput != 'Alphabot')  return res.json(loghandler.invalidKey)
+	if (apikeyInput != process.env.KY2_API)  return res.json(loghandler.invalidKey)
 
        fetch(encodeURI(`https://raw.githubusercontent.com/jepribarus/JB-Api/main/nsfw/gangbang.json`))
         .then(response => response.json())
@@ -790,7 +790,7 @@ router.get('/nsfw/glasses', async (req, res, next) => {
         var apikeyInput = req.query.apikey
             
 	if(!apikeyInput) return res.json(loghandler.notparam)
-	if (apikeyInput != 'Alphabot')  return res.json(loghandler.invalidKey)
+	if (apikeyInput != process.env.KY2_API)  return res.json(loghandler.invalidKey)
 
        fetch(encodeURI(`https://raw.githubusercontent.com/jepribarus/JB-Api/main/nsfw/glasses.json`))
         .then(response => response.json())
@@ -811,7 +811,7 @@ router.get('/nsfw/hentai', async (req, res, next) => {
         var apikeyInput = req.query.apikey
             
 	if(!apikeyInput) return res.json(loghandler.notparam)
-	if (apikeyInput != 'Alphabot')  return res.json(loghandler.invalidKey)
+	if (apikeyInput != process.env.KY2_API)  return res.json(loghandler.invalidKey)
 
        fetch(encodeURI(`https://raw.githubusercontent.com/jepribarus/JB-Api/main/nsfw/hentai.json`))
         .then(response => response.json())
@@ -832,7 +832,7 @@ router.get('/nsfw/hentaigif', async (req, res, next) => {
         var apikeyInput = req.query.apikey
             
 	if(!apikeyInput) return res.json(loghandler.notparam)
-	if (apikeyInput != 'Alphabot')  return res.json(loghandler.invalidKey)
+	if (apikeyInput != process.env.KY2_API)  return res.json(loghandler.invalidKey)
 
        fetch(encodeURI(`https://raw.githubusercontent.com/jepribarus/JB-Api/main/nsfw/hnt_gifs.json`))
         .then(response => response.json())
@@ -853,7 +853,7 @@ router.get('/nsfw/jahy', async (req, res, next) => {
         var apikeyInput = req.query.apikey
             
 	if(!apikeyInput) return res.json(loghandler.notparam)
-	if (apikeyInput != 'Alphabot')  return res.json(loghandler.invalidKey)
+	if (apikeyInput != process.env.KY2_API)  return res.json(loghandler.invalidKey)
 
        fetch(encodeURI(`https://raw.githubusercontent.com/jepribarus/JB-Api/main/nsfw/jahy.json`))
         .then(response => response.json())
@@ -874,7 +874,7 @@ router.get('/nsfw/masturbation', async (req, res, next) => {
         var apikeyInput = req.query.apikey
             
 	if(!apikeyInput) return res.json(loghandler.notparam)
-	if (apikeyInput != 'Alphabot')  return res.json(loghandler.invalidKey)
+	if (apikeyInput != process.env.KY2_API)  return res.json(loghandler.invalidKey)
 
        fetch(encodeURI(`https://raw.githubusercontent.com/jepribarus/JB-Api/main/nsfw/masturbation.json`))
         .then(response => response.json())
@@ -895,7 +895,7 @@ router.get('/nsfw/nsfwNeko', async (req, res, next) => {
         var apikeyInput = req.query.apikey
             
 	if(!apikeyInput) return res.json(loghandler.notparam)
-	if (apikeyInput != 'Alphabot')  return res.json(loghandler.invalidKey)
+	if (apikeyInput != process.env.KY2_API)  return res.json(loghandler.invalidKey)
 
        fetch(encodeURI(`https://raw.githubusercontent.com/jepribarus/JB-Api/main/nsfw/nsfwNeko.json`))
         .then(response => response.json())
@@ -916,7 +916,7 @@ router.get('/nsfw/orgy', async (req, res, next) => {
         var apikeyInput = req.query.apikey
             
 	if(!apikeyInput) return res.json(loghandler.notparam)
-	if (apikeyInput != 'Alphabot')  return res.json(loghandler.invalidKey)
+	if (apikeyInput != process.env.KY2_API)  return res.json(loghandler.invalidKey)
 
        fetch(encodeURI(`https://raw.githubusercontent.com/jepribarus/JB-Api/main/nsfw/orgy.json`))
         .then(response => response.json())
@@ -937,7 +937,7 @@ router.get('/nsfw/panties', async (req, res, next) => {
         var apikeyInput = req.query.apikey
             
 	if(!apikeyInput) return res.json(loghandler.notparam)
-	if (apikeyInput != 'Alphabot')  return res.json(loghandler.invalidKey)
+	if (apikeyInput != process.env.KY2_API)  return res.json(loghandler.invalidKey)
 
        fetch(encodeURI(`https://raw.githubusercontent.com/jepribarus/JB-Api/main/nsfw/panties.json`))
         .then(response => response.json())
@@ -958,7 +958,7 @@ router.get('/nsfw/pussy', async (req, res, next) => {
         var apikeyInput = req.query.apikey
             
 	if(!apikeyInput) return res.json(loghandler.notparam)
-	if (apikeyInput != 'Alphabot')  return res.json(loghandler.invalidKey)
+	if (apikeyInput != process.env.KY2_API)  return res.json(loghandler.invalidKey)
 
        fetch(encodeURI(`https://raw.githubusercontent.com/jepribarus/JB-Api/main/nsfw/pussy.json`))
         .then(response => response.json())
@@ -979,7 +979,7 @@ router.get('/nsfw/thighs', async (req, res, next) => {
         var apikeyInput = req.query.apikey
             
 	if(!apikeyInput) return res.json(loghandler.notparam)
-	if (apikeyInput != 'Alphabot')  return res.json(loghandler.invalidKey)
+	if (apikeyInput != process.env.KY2_API)  return res.json(loghandler.invalidKey)
 
        fetch(encodeURI(`https://raw.githubusercontent.com/jepribarus/JB-Api/main/nsfw/thighs.json`))
         .then(response => response.json())
@@ -1000,7 +1000,7 @@ router.get('/nsfw/yuri', async (req, res, next) => {
         var apikeyInput = req.query.apikey
             
 	if(!apikeyInput) return res.json(loghandler.notparam)
-	if (apikeyInput != 'Alphabot')  return res.json(loghandler.invalidKey)
+	if (apikeyInput != process.env.KY2_API)  return res.json(loghandler.invalidKey)
 
        fetch(encodeURI(`https://raw.githubusercontent.com/jepribarus/JB-Api/main/nsfw/yuri.json`))
         .then(response => response.json())
