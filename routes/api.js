@@ -139,7 +139,7 @@ loghandler = {
     }
 }
 
-const envlist = require("arenv.js");
+const envlist = require(__path + 'arenv.js');
 const listkey = envlist.array;
 //router.use(favicon(__path + "/views/logo.ico"));
 
