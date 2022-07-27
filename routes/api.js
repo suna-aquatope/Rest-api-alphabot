@@ -138,11 +138,7 @@ loghandler = {
         message: 'mungkin sedang dilakukan perbaikan'
     }
 }
-
-const api1key = process.env.KEY1;
-const api2key = process.env.KEY2;
-const kyu2api = process.env.KY2_API;
-const listkey = ['KY'+api1key+',KY'+api2key+',KYGG'];
+const listkey = process.env.KY2_API;
 console.log(listkey);
 //router.use(favicon(__path + "/views/logo.ico"));
 
@@ -246,7 +242,7 @@ router.get('/remove', (req, res, next) => {
 
     if (!apikey) return res.json(loghandler.notparam)
     if (!(status && apikeyInput && email && nomorhp && name && age && country && exp)) return res.json(loghandler.notAddApiKey)
-    if (apikey != kyulist) return res.json(loghandler.invalidKey)
+    if (apikey != listkey) return res.json(loghandler.invalidKey)
 
     try {
         zahirr.remove({
@@ -277,7 +273,7 @@ router.get('/remove', (req, res, next) => {
 router.get('/china', async (req, res, next) => {
   var apikeyInput = req.query.apikey;
   if(!apikeyInput) return res.json(loghandler.notparam)
-  if(kyu2api.includes(apikeyInput)) {
+  if(listkey.includes(apikeyInput)) {
     const china = JSON.parse(fs.readFileSync(__path +'/cecan/china.json'));
     const China = china[Math.floor(Math.random() * china.length)];
     let hasil = China.url;
