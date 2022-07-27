@@ -140,8 +140,6 @@ loghandler = {
 }
 
 const listkey = process.env.KY2_API;
-var apikeyInput = req.query.apikey;
-var kyulist = listkey.includes(apikeyInput);
 //router.use(favicon(__path + "/views/logo.ico"));
 
 var len = 15
@@ -288,8 +286,9 @@ router.get('/china', async (req, res, next) => {
 })
 router.get('/cewe/vietnam', async (req, res, next) => {
         var apikeyInput = req.query.apikey
+	var kyugg = (listkey.includes(apikeyInput));
 	if(!apikeyInput) return res.json(loghandler.notparam)	
-	if (apikeyInput != kyulist)  return res.json(loghandler.invalidKey)
+	if (apikeyInput != kyugg)  return res.json(loghandler.invalidKey)
        fetch(encodeURI(`https://raw.githubusercontent.com/zeeoneofc/Asupan/main/cecan/vietnam.json`))
         .then(response => response.json())
         .then(data => {
