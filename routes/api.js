@@ -140,6 +140,7 @@ loghandler = {
 }
 
 const listkey = process.env.KY2_API;
+var apikeyInput = req.query.apikey;
 var kyulist = listkey.includes(apikeyInput);
 //router.use(favicon(__path + "/views/logo.ico"));
 
