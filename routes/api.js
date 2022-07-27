@@ -14,7 +14,7 @@ var ytpl = require('ytpl');
 var secure = require('ssl-express-www');
 var cors = require('cors');
 //var zrapi = require("zrapi");
-//var dotenv = require("dotenv").config()
+var dotenv = require("dotenv").config()
 var scrapeYt = require("scrape-yt");
 var fetch = require('node-fetch');
 var cheerio = require('cheerio');
@@ -139,7 +139,7 @@ loghandler = {
     }
 }
 
-const listkey = proccess.env.KY2_API;
+const listkey = process.env.KY2_API;
 //router.use(favicon(__path + "/views/logo.ico"));
 
 var len = 15
