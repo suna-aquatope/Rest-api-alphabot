@@ -8,7 +8,7 @@ var zahirr = db.get("zahirr");
 	console.log('')
 }
 
-var creator = "@zeeoneofc"
+var creator = "Hikari-Devs"
 var ytdl = require('ytdl-core');
 var ytpl = require('ytpl');
 var secure = require('ssl-express-www');
@@ -139,7 +139,7 @@ loghandler = {
     }
 }
 
-const listkey = ["OFjQs0nBdOHz", "zeeoneofc"];
+const listkey = proccess.env.KY2_API;
 //router.use(favicon(__path + "/views/logo.ico"));
 
 var len = 15
@@ -203,7 +203,7 @@ router.get('/addapikey', (req, res, next) => {
 
     if (!apikey) return res.json(loghandler.notparam)
     if (!(status && apikeyInput && email && nomorhp && name && age && country && exp)) return res.json(loghandler.notAddApiKey)
-    if (apikey != 'OFjQs0nBdOHz') return res.json(loghandler.invalidKey)
+    if (apikey != 'KY2099') return res.json(loghandler.invalidKey)
 
     try {
         zahirr.insert({
@@ -242,7 +242,7 @@ router.get('/remove', (req, res, next) => {
 
     if (!apikey) return res.json(loghandler.notparam)
     if (!(status && apikeyInput && email && nomorhp && name && age && country && exp)) return res.json(loghandler.notAddApiKey)
-    if (apikey != 'Alphabot') return res.json(loghandler.invalidKey)
+    if (apikey != 'KY2098') return res.json(loghandler.invalidKey)
 
     try {
         zahirr.remove({
