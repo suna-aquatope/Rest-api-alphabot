@@ -141,7 +141,7 @@ loghandler = {
 
 const api1key = process.env.KEY1;
 const api2key = process.env.KEY2;
-const listkey = api1key,api2key;
+const listkey = [api1key,api2key];
 //router.use(favicon(__path + "/views/logo.ico"));
 
 var len = 15
