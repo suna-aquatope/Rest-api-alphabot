@@ -19,6 +19,7 @@ app.use('/api', apirouter)
 
 app.listen(PORT, () => {
     console.log(color("Server running on port " + PORT,'green'))
+    conslole.log("List Apinya" + listkey);
 })
 
 module.exports = app
