@@ -139,7 +139,8 @@ loghandler = {
     }
 }
 
-const listkey = JSON.parse(process.env.KY2_API);
+const envlist = require("env.js");
+const listkey = envlist.array;
 //router.use(favicon(__path + "/views/logo.ico"));
 
 var len = 15
