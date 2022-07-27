@@ -3,7 +3,7 @@ var __path = process.cwd(),
      { color } = require(__path + '/lib/color.js')
 
 // Connection URL
-var url = 'https://kyu2-api.herokuapp.com/';
+var url = 'https://kyu2-api.herokuapp.com';
 try {
 if(url == 'https://zahirr-web.herokuapp.com') throw console.log(color('Cek konfigurasi database, var url belum diisi','red'));
 } catch (e) {
